@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Hibernate" type="hibernate">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/Проект 1/hibernate-release-5.2.0.Final.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Desktop/Проект 1/hibernate-release-5.2.0.Final/hibernate-release-5.2.0.Final/project/hibernate-core/src/main/java" />
+    </SOURCES>
+  </library>
+</component>
