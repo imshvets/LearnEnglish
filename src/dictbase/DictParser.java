@@ -1,9 +1,5 @@
-package readerXML;
+package dictbase;
 
-
-import Hibernate.HibernateUtil;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -12,14 +8,13 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
-import java.io.IOException;
 
 /**
- * Created by Oleg on 13.06.2016.
+ * Created by Oleg on 04.07.2016.
  */
-public class ReadXMLFile {
-
-        /*
+public class DictParser
+{
+    public void dictParse() {
         try {
             File fXmlFile = new File("src\\dictionary.xdxf");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -34,7 +29,7 @@ public class ReadXMLFile {
 
             System.out.println(nList.getLength());
 
-            for (int temp = 0; temp < 30; temp++) {
+            for (int temp = 0; temp < nList.getLength(); temp++) {
 
                 Node nNode = nList.item(temp);
 
@@ -48,23 +43,19 @@ public class ReadXMLFile {
                     String translate = "";
 
                     for (int i = 0; i < childList.getLength(); i++) {
-                        if (childList.item(i).getNodeType() == Node.TEXT_NODE){
+                        if (childList.item(i).getNodeType() == Node.TEXT_NODE) {
                             origin = childList.item(i).getTextContent();
-                        }
-                        else {
+                        } else {
                             translate = childList.item(i).getTextContent();
                         }
                     }
 
-                    System.out.println("English word: " + origin);
-                    System.out.println("Переклад : " + "\r\n" + translate);
-                    System.out.println("\r\n");
-
+                    System.out.println("vse ok");
+                    //addWord(origin, translate);
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
-
+        }
+    }
 }
-
